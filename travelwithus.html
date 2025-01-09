@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('mount.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #006F8C;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #004F6C;
+        }
+        .hero {
+            background-image: url('suset.png');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 10%;
+            position: relative; 
+        }
+        
+
+        .hero h1, .hero p {
+            position: relative; 
+            z-index: 1; 
+        }
+
+        .container {
+            padding: 20px 10%;
+        }
+
+        .card {
+            display: inline-block;
+            width: 30%;
+            margin: 1.5%;
+            background-color: #faf6f6;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+        }
+        .destination-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #f4f4f4; 
+        }
+        
+        .card-image {
+            width: 100%;
+            height: auto;
+        }
+        
+        .cardd-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc; 
+        }
+        .caard-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc; 
+        }
+        
+
+        .card h3 {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .card p {
+            padding: 0 10px 10px;
+            margin: 0;
+        }
+        .carrd-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc; 
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
+        .image {
+            background-image: url('suset.png');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 300px;
+            opacity: 0.5; 
+        }
+        
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: black;
+        }
+                
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        #contact {
+            background-color: #f4f4f4;
+            padding: 40px 10%;
+            text-align: center;
+        }
+        
+        #contact h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        #contact p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        #contact form div {
+            margin-bottom: 15px;
+        }
+        
+        #contact label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #contact button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #contact button:hover {
+            background-color: #006F8C;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel With US</h1>
+        <p>Your adventure starts here!</p>
+    </header>
+
+    <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="header">
+        <div class="text">
+            <h1>Explore the World</h1>
+            <p>Discover breathtaking destinations and make memories for a lifetime.</p>
+        </div>
+        <div class="image"></div>
+    </div>
+    
+
+    
+    <div class="container">
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="card">
+                <img src="beach.png" alt="Beach" class="destination-image">
+                <h3>Beach Getaways</h3>
+                <p>Relax on the sandy shores of paradise.</p>
+            </div>
+            
+            <div class="card">
+                <img src="mountain.png" alt="Mountain Image" class="card-image">
+                <h3>Mountain Escapes</h3>
+                <p>Enjoy the tranquility of towering peaks.</p>
+            </div>
+            
+            <div class="card">
+                <img src="urban.png" alt="Urban Adventures" class="cardd-image">
+                <h3>Urban Adventures</h3>
+                <p>Experience the hustle and bustle of vibrant cities.</p>
+            </div>
+            
+        </section>
+
+        <section id="gallery">
+            <h2>Travel Moments</h2>
+            <div class="card">
+                <img src="travelraj2.png" alt="Travel Raj 2">
+                <h3>Amber Fort</h3>
+                <p>Amber Fort (also spelled Amer Fort) is a stunning architectural marvel located in Jaipur, Rajasthan, India. Built in the late 16th century by Raja Man Singh I, it is one of the most popular tourist attractions in the state and a UNESCO World Heritage Site as part of the "Hill Forts of Rajasthan."</p>
+            </div>
+            <div class="card">
+                <img src="newyork.png" alt="New York City" class="card-image">
+                <h3>New York City</h3>
+                <p>New York City, the city that never sleeps, is a global hub of culture, fashion, and business. Famous landmarks like Times Square, Central Park, and the Statue of Liberty make it a must-visit destination for travelers worldwide.</p>
+            </div>
+            <div class="card">
+                <img src="sydney.png" alt="Sydney" class="caard-image">
+                <h3>Sydney Opera House</h3>
+                <p>The Sydney Opera House is an iconic landmark of Australia, located on the shores of Sydney Harbour. Known for its unique architectural design, it's one of the most recognizable and celebrated cultural venues in the world.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Travel With Adrika and Shruti | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
